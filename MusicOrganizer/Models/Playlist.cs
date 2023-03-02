@@ -13,7 +13,8 @@ namespace MusicOrganizer.Models
     {
       Name = name;
       _instances.Add(this);
-      Id = _totalCount++;
+      _totalCount++;
+      Id = _totalCount;
       Medias = new List<Media> {};
     }
     public static List<Playlist> GetAll()

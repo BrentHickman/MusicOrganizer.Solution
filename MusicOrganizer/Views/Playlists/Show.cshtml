@@ -1,0 +1,18 @@
+@{
+  Layout = "_Layout";
+}
+
+@using MusicOrganizer.Models;
+    <h3>Here is all the media in this playlist:</h3>
+
+    <ol>
+    @foreach (Media media in @Model["medias"])
+    {
+      <li><a href='/playlists/@Model["playlist"].Id/medias/@media.Id'>@media.Title</a></li>
+    }
+    </ol>
+
+    <p><a href='/playlists/@Model["playlist"].Id/medias/new'>Add a new media</a></p>
+    <p><a href='/playlists'>Return to Playlists</a></p>
+    <p><a href='/'>Return to Main Page</a></p>
+
