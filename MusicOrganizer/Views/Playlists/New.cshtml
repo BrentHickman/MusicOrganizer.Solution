@@ -1,0 +1,14 @@
+@{
+  Layout = "_Layout";
+}
+    <h1>Add a Playlist</h1>
+    <p>Add a Playlist here:</p>
+
+    <form action="/playlists" method="post">
+      <label for="playlistName">Playlist name</label>
+      <input id="playlistName" name="playlistName" type="text">
+      <button type="submit">Add</button>
+    </form>
+
+    <p><a href="/">Back home</a></p>
+    <p><a href="/playlists">Back to categories.</a></p>
